@@ -189,6 +189,7 @@ button { color: inherit; font: inherit; }
 .tool-marquee-group li { display: inline-flex; min-height: 58px; align-items: center; gap: 11px; padding: 0 18px; border: 1px solid var(--border); border-radius: 999px; background: var(--bg-soft); color: var(--text); font-size: .78rem; font-weight: 600; white-space: nowrap; transition: border-color .25s ease, background .25s ease, box-shadow .25s ease, color .25s ease, transform .25s ease; }
 .tool-marquee-group li:hover { border-color: rgba(184, 92, 112, .72); background: rgba(146, 52, 71, .12); box-shadow: 0 0 28px rgba(146, 52, 71, .2); color: var(--rose); transform: translateY(-1px); }
 .tool-marquee-group img { width: 23px; height: 23px; flex: none; object-fit: contain; }
+.tool-marquee-group img.tool-icon-on-light { padding: 3px; border-radius: 6px; background: #fff; }
 @keyframes tool-marquee-left { to { transform: translate3d(-50%, 0, 0); } }
 @keyframes tool-marquee-right { from { transform: translate3d(-50%, 0, 0); } to { transform: translate3d(0, 0, 0); } }
 
