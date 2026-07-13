@@ -1,0 +1,130 @@
+.design-hero h1 {
+  max-width: 1100px;
+}
+
+.design-collection {
+  overflow: hidden;
+}
+
+.design-section-heading {
+  margin-bottom: 58px;
+}
+
+.design-section-heading h2 {
+  margin: 0;
+  font: 800 clamp(3.4rem, 6vw, 6.2rem)/.82 var(--heading);
+  letter-spacing: -.025em;
+  text-transform: uppercase;
+}
+
+.design-gallery {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.design-card {
+  min-width: 0;
+}
+
+.design-card .gallery-trigger {
+  display: grid;
+  min-height: 280px;
+  place-items: center;
+  background: #09090b;
+}
+
+.design-card .gallery-trigger img {
+  width: 100%;
+  height: auto;
+  max-height: 680px;
+  object-fit: contain;
+}
+
+.design-card figcaption {
+  display: flex;
+  min-height: 154px;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+}
+
+.design-card-heading {
+  display: grid;
+  gap: 8px;
+}
+
+.design-card-heading > span {
+  color: var(--rose);
+  font: 600 .58rem/1 var(--body);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.design-card-heading h3 {
+  margin: 0;
+  font: 700 clamp(1.6rem, 2vw, 2rem)/1 var(--heading);
+  text-transform: uppercase;
+}
+
+.view-design-button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: auto;
+  padding: 12px 0 9px;
+  border: 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--rose);
+  background: transparent;
+  color: var(--text);
+  font-size: .62rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  cursor: zoom-in;
+  transition: color .2s ease, border-color .2s ease;
+}
+
+.view-design-button span {
+  color: var(--rose);
+  font-size: .95rem;
+  transition: transform .2s ease;
+}
+
+.view-design-button:hover {
+  border-bottom-color: var(--text);
+  color: var(--rose);
+}
+
+.view-design-button:hover span {
+  transform: translate(3px, -3px);
+}
+
+@media (max-width: 1024px) {
+  .design-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .design-gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .design-section-heading {
+    margin-bottom: 42px;
+  }
+
+  .design-card .gallery-trigger {
+    min-height: 220px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .view-design-button,
+  .view-design-button span {
+    transition: none;
+  }
+}
