@@ -200,10 +200,11 @@ button { color: inherit; font: inherit; }
 .contact h2 span { color: var(--rose); }
 .contact-inner > p:not(.eyebrow) { max-width: 550px; margin: 0 0 58px; color: var(--text-soft); font-size: 1.1rem; }
 .contact-links { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--border); border-left: 1px solid var(--border); }
-.contact-links a { display: grid; min-height: 150px; grid-template-columns: 1fr auto; align-content: space-between; gap: 4px; padding: 24px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); transition: background .2s ease; }
-.contact-links a:hover { background: rgba(146, 52, 71, .14); }
+.contact-links a { display: grid; min-height: 150px; grid-template-columns: 1fr auto; align-content: space-between; gap: 4px; padding: 24px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); cursor: pointer; transition: background .2s ease, border-color .2s ease; }
+.contact-links a:hover { border-color: rgba(184, 92, 112, .55); background: rgba(146, 52, 71, .14); }
 .contact-links span { grid-column: 1 / -1; color: var(--text-soft); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; }
 .contact-links strong { align-self: end; font: 600 1.1rem/1.2 var(--heading); text-transform: uppercase; }
+.contact-links .contact-email-address { text-transform: none; }
 .contact-links b { align-self: end; color: var(--rose); font-weight: 400; transition: transform .2s ease; }
 .contact-links a:hover b { transform: translate(3px, -3px); }
 
